@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/interactive-rating-component-8PNyKgnOA7)
 - Live Site URL: [GitHub Solution Site](https://frontend-mentor-interactive-rating-component-sigma-one.vercel.app/)
 
 ## My process
