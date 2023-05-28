@@ -1,0 +1,157 @@
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Dark-Grey: hsl(213, 19%, 28%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+@font-face {
+    font-family: Overpass;
+    src: url("./font/Overpass.ttf");
+}
+
+body {
+    font-family: Overpass, sans-serif;
+    background: var(--Very-Dark-Blue);
+    color: var(--White);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+main > .ratingComponent,
+main > .thankYouComponent {
+    background: var(--Dark-Blue);
+    height: 25em;
+    width: 30em;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.starIcon {
+    background-color: var(--Dark-Grey);
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.ratingTitle {
+    font-size: 30px;
+}
+
+.ratingBody {
+    opacity: 0.4;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.ratingSelection {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 10px 0px;
+}
+
+button[type="button"] {
+    background-color: var(--Dark-Grey);
+    height: 50px;
+    width: 50px;
+    color: var(--Light-Grey);
+    border: none;
+    border-radius: 25px;
+}
+
+button[type="button"]:hover,
+button[type="button"].selected {
+    background-color: var(--Orange);
+    color: white;
+}
+
+button[type="submit"] {
+    background-color: var(--Orange);
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 20px;
+    color: var(--White);
+    width: 24.2em;
+    height: 3em;
+}
+
+button[type="submit"]:hover {
+    color: var(--Orange);
+    background-color: var(--White);
+}
+
+#secondComponent {
+    display: none;
+}
+
+.thankYouComponent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.rating {
+    color: var(--Orange);
+    background-color: var(--Dark-Grey);
+    width: 10.5em;
+    height: 1.2em;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+    margin-top: 30px;
+    margin-left: 9em;
+}
+
+.thankYouIcon {
+    margin-top: 10px;
+}
+
+.thankYouTitle {
+    font-size: 2em;
+}
+
+.thankYouBody {
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.attribution { 
+    position: fixed;
+    bottom: 1em;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: var(--Orange); 
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    main > .ratingComponent,
+    main > .thankYouComponent {
+        height: 25em;
+        width: 17em;
+        padding: 25px;
+        border-radius: 25px;
+    } 
+
+    button[type="submit"] {
+        width: 14.1em;
+    }
+
+    .rating {
+        margin-left: 3em;
+    }
+}
