@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor Solution](https://your-solution-url.com)
-- Live Site URL: [GitHub Solution Site](https://your-live-site-url.com)
+- Live Site URL: [GitHub Solution Site](https://frontend-mentor-interactive-rating-component-sigma-one.vercel.app/)
 
 ## My process
 
